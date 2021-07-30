@@ -61,6 +61,7 @@ exports.login = async (req, res) => {
         {
           id: user[0].user_id,
           email: user[0].email,
+          role : user[0].role
         },
         process.env.KEY_TOKEN,
         { expiresIn: "5d" }

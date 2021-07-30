@@ -6,6 +6,7 @@ exports.up = function(knex) {
       table.string('password ',255).notNullable();
       table.integer('level ',3).defaultTo(1);
       table.integer('status ',1).defaultTo(1);
+      table.integer('role ',1).defaultTo(3);
       table.string('display_name',128);
       table.string('avatar',225).defaultTo('public/images/default_avatar.png');
       table.string('phone_number',16);
